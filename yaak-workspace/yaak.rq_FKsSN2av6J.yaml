@@ -1,0 +1,31 @@
+type: http_request
+model: http_request
+id: rq_FKsSN2av6J
+createdAt: 2025-05-02T12:17:55.114507
+updatedAt: 2025-05-02T12:21:16.992949
+workspaceId: wk_KFWJoQXa9R
+folderId: fl_dqD7sV9Mz2
+authentication: {}
+authenticationType: null
+body:
+  form:
+    - enabled: true
+      file: ./yaak-file-upload-bug-repro/test_files/2MB.bin
+      id: 8CTI9pKxRh
+      name: files
+    - enabled: true
+      id: 9nAnN6FpzK
+      name: ""
+      value: ""
+bodyType: multipart/form-data
+description: ""
+headers:
+  - enabled: true
+    name: Content-Type
+    value: multipart/form-data
+    id: r8gjRfsqKZ
+method: POST
+name: Single file 2MB (fails)
+sortPriority: 5000.0
+url: localhost:3042/document/upload
+urlParameters: []

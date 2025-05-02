@@ -1,0 +1,10 @@
+type: workspace
+model: workspace
+id: wk_KFWJoQXa9R
+createdAt: 2025-05-02T09:25:19.897698
+updatedAt: 2025-05-02T09:25:19.897699
+name: Yaak file upload repro
+description: ''
+settingValidateCertificates: true
+settingFollowRedirects: true
+settingRequestTimeout: 0

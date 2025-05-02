@@ -2,7 +2,7 @@
 
 This repro assumes you have the following installed:
 
-- NodeJS
+- NodeJS v22
 - npm
 - bash
 
@@ -32,5 +32,11 @@ This repro assumes you have the following installed:
     ./scripts/curl-test.sh
     ```
 
-5. Use the included Yaak workspace to test uploading the files of various sizes. You'll need to update the file base paths, they should all be pointing to the correct location in the repo already.
-6. Observe success on the files smaller than 1MB and failure on files 1MB or larger
+5. Update the Yaak workspace file paths to use an absolute path pointing to the `test_files` dir in this repo
+
+    ```sh
+    ./scripts/update-yaak-workspace-file-paths.sh
+    ```
+
+6. Use the included Yaak workspace to test uploading the files of various sizes.
+7. Observe success on the files smaller than 1MB and failure on files 1MB or larger

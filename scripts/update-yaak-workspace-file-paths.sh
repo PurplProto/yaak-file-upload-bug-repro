@@ -18,7 +18,7 @@ fi
 # Search each file in the yaak-workspace directory for the string "./yaak-file-upload-bug-repro/test_files/" and replace it with the absolute path
 for file in "$YAAK_WORKSPACE_DIR"/*; do
   if [ -f "$file" ]; then
-    sed -i "s|./yaak-file-upload-bug-repro/test_files/|$TEST_FILE_DIR/|g" "$file"
+    sed -i '' "s|./yaak-file-upload-bug-repro/test_files/|$TEST_FILE_DIR/|g" "$file"
     echo "Updated paths in $file"
   fi
 done
